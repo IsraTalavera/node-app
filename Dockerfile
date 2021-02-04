@@ -10,6 +10,9 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN apt-get update -y 
 RUN apt-get install -y nodejs
+RUN echo 'Random sample text' > test4.txt
+RUN ls
+RUN cat test4.txt
 # If you are building your code for production
 # RUN npm install --only=production
 
@@ -18,4 +21,4 @@ COPY . .
 
 EXPOSE 8080
 CMD [ "npm", "start" ]
-RUN echo 'Random sample text' > test4.txt
+

@@ -25,7 +25,7 @@ phases:
       - echo Writing image definitions file...
       - printf '[{"name":"nodeapp","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       - cat imagedefinitions.json 
-      - echo 'Example text' > Example1.txt
+      - echo $CODEBUILD_BUILD_ID > Example1.txt
       - ls
       - cat Example1.txt
 artifacts:

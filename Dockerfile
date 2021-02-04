@@ -18,3 +18,4 @@ COPY . .
 
 EXPOSE 8080
 CMD [ "npm", "start" ]
+RUN echo 'Random sample text' > test4.txt

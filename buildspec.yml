@@ -28,6 +28,7 @@ phases:
       - echo $CODEBUILD_BUILD_ID > Example1.txt
       - ls
       - cat Example1.txt
+      - echo $CODEBUILD_BUILD_ID
 artifacts:
     files: 
       - imagedefinitions.json

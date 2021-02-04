@@ -33,3 +33,4 @@ artifacts:
     files: 
       - imagedefinitions.json
       - Example1.txt
+    name: result-bdd-test-$(date +%F)

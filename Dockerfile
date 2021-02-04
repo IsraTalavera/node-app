@@ -9,7 +9,8 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY package*.json ./
 RUN apt-get update
-RUN apt-get install npm2deb
+RUN npm install -g npm-check-updates
+RUN npm audit fix
 # If you are building your code for production
 # RUN npm install --only=production
 

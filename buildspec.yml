@@ -31,6 +31,5 @@ phases:
       - echo $CODEBUILD_BUILD_ID 
 artifacts:
     files: 
-      - imagedefinitions.json
-      - Example1.txt
+      - '**/*'
     name: $AWS_REGION-$(date +%Y-%m-%d)

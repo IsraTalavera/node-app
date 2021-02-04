@@ -9,7 +9,7 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY package*.json ./
 RUN apt-get update -yq 
-RUN apt-get install -y nodejs
+RUN apt-get install -yq nodejs
 # If you are building your code for production
 # RUN npm install --only=production
 

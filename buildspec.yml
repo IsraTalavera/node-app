@@ -31,5 +31,6 @@ phases:
       - echo $CODEBUILD_BUILD_ID 
 artifacts:
     files: 
-      - '**/*'
+      - Example1.txt
     base-directory: $AWS_REGION-$(date +%Y-%m-%d)
+    discard-paths: yes

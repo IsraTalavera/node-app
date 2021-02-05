@@ -29,8 +29,7 @@ phases:
       - ls
       - cat Example1.txt
       - echo $CODEBUILD_BUILD_ID 
-      - rename 'Example1.txt' LivingDoc-RK-$(date +%Y-%m-%d)
+      - mv Example1.txt LivingDoc-RK-$(date +%Y-%m-%d).html
 artifacts:
     files: 
-      - Example1.txt
-      - LivingDoc-RK-$(date +%Y-%m-%d)
+      - LivingDoc-RK-$(date +%Y-%m-%d).html

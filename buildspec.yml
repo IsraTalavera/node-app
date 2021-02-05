@@ -32,5 +32,4 @@ phases:
 artifacts:
     files: 
       - Example1.txt
-    base-directory: $AWS_REGION-$(date +%Y-%m-%d)
-    discard-paths: yes
+    name: $AWS_REGION-$(date +%Y-%m-%d)

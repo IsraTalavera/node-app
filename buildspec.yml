@@ -29,7 +29,6 @@ phases:
       - ls
       - cat Example1.txt
       - echo $CODEBUILD_BUILD_ID 
-     finally:
       - echo $CODEBUILD_BUILD_SUCCEEDING
 # artifacts:
     # files: 

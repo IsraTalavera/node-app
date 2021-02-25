@@ -30,6 +30,9 @@ phases:
       - cat Example1.txt
       - echo $CODEBUILD_BUILD_ID 
       - echo $CODEBUILD_BUILD_SUCCEEDING
+    finally:
+      - echo final
+      - echo $CODEBUILD_BUILD_SUCCEEDING
 # artifacts:
     # files: 
       # - LivingDoc-RK-$(date +%Y-%m-%d).html

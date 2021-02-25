@@ -31,10 +31,6 @@ phases:
       - echo $CODEBUILD_BUILD_ID 
      finally:
       - echo $CODEBUILD_BUILD_SUCCEEDING
-      - mv Example1.txt LivingDoc-RK-$CODEBUILD_BUILD_SUCCEEDING-$(date +%Y-%m-%d).html
-      - aws configure set default.s3.signature_version s3v4
-      - aws s3 presign s3://isratalavera3-my-bucket-example1/LivingDoc-RK-$(date +%Y-%m-%d).html --expires-in 604800
-      - aws s3 cp LivingDoc-RK-$CODEBUILD_BUILD_SUCCEEDING-$(date +%Y-%m-%d).html s3://isratalavera3-my-bucket-example1/
 # artifacts:
     # files: 
       # - LivingDoc-RK-$(date +%Y-%m-%d).html

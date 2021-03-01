@@ -11,6 +11,8 @@ COPY package*.json ./
 RUN apt-get update -y 
 RUN apt-get install -y nodejs
 RUN echo 'Random sample text' > test4.txt
+RUN apt update
+RUN apt install ./google-chrome-stable_current_amd64.deb -y --allow-downgrades
 RUN ls
 RUN cat test4.txt
 # If you are building your code for production
